@@ -6,6 +6,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import id.gits.imageactivitylib.JokeActivity;
+
 
 /**
  * A placeholder fragment containing a simple view.
@@ -21,5 +23,9 @@ public class MainActivityFragment extends Fragment {
         View root = inflater.inflate(R.layout.fragment_main, container, false);
 
         return root;
+    }
+
+    public void goToJoke(String result) {
+        JokeActivity.startThisActivity(getActivity(), result);
     }
 }
